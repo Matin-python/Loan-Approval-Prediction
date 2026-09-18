@@ -11,6 +11,18 @@ Two Machine Learning models are used in this project:
 
 The models are trained using the processed dataset and evaluated using accuracy score.
 
+## Features
+
+* Loan approval prediction
+* Data preprocessing
+* Categorical data encoding
+* Missing value handling
+* Correlation analysis
+* Logistic Regression
+* K-Nearest Neighbors (KNN)
+* Accuracy evaluation
+
+
 
 ## How to Run
 
