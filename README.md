@@ -1,5 +1,18 @@
 # Loan
 
+## How to Run
+
+1. Make sure Python is installed.
+2. Place `loan.csv` in the project directory.
+3. Install the required libraries.
+4. Run the Python script:
+
+```bash
+python loan_prediction.py
+```
+
+The program will display the correlation heatmap and print the accuracy scores of Logistic Regression and KNN.
+
 ## Requirements
 
 The main dependencies are:
