@@ -1,5 +1,17 @@
 # Loan
 
+This project predicts whether a loan application will be approved or rejected using Machine Learning classification algorithms.
+
+The project uses a loan dataset containing information about applicants and their loan applications. The data is preprocessed by removing unnecessary columns, converting categorical values into numerical values, and handling missing values.
+
+Two Machine Learning models are used in this project:
+
+* Logistic Regression
+* K-Nearest Neighbors (KNN)
+
+The models are trained using the processed dataset and evaluated using accuracy score.
+
+
 ## How to Run
 
 1. Make sure Python is installed.
