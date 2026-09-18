@@ -1,5 +1,17 @@
 # Loan
 
+## Requirements
+
+The main dependencies are:
+
+```text
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+```
+
 ## Contributing
 
 Contributions, suggestions, and bug reports are welcome.
