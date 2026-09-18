@@ -22,6 +22,23 @@ The models are trained using the processed dataset and evaluated using accuracy 
 * K-Nearest Neighbors (KNN)
 * Accuracy evaluation
 
+## Dataset
+
+The project uses a loan dataset stored in:
+
+```text
+loan.csv
+```
+
+The dataset contains information about loan applicants and their applications.
+
+The target variable is:
+
+```text
+Loan_Status
+```
+
+which represents whether the loan application was approved or rejected.
 
 
 ## How to Run
