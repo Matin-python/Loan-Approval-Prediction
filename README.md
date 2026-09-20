@@ -2,6 +2,7 @@
 
 A Machine Learning project that predicts loan approval using Logistic Regression and K-Nearest Neighbors (KNN), with data preprocessing, visualization, and accuracy evaluation.
 
+
 ## Overview
 
 This project predicts whether a loan application will be approved or rejected using Machine Learning classification algorithms.
@@ -13,34 +14,34 @@ Two Machine Learning classification models are trained and evaluated in this pro
 * Logistic Regression
 * K-Nearest Neighbors (KNN)
 
-## Features
 
-* Loan approval prediction
-* Data preprocessing
-* Categorical data encoding
-* Missing value handling
-* Correlation analysis
-* Logistic Regression
-* K-Nearest Neighbors (KNN)
-* Accuracy evaluation
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+
 
 ## Dataset
 
-The project uses a loan dataset stored in:
+The project uses the following dataset:
 
-```text
+```text id="f8e2k1"
 loan.csv
 ```
 
-The dataset contains information about loan applicants and their applications.
+The dataset contains information about loan applicants, including personal, financial, and credit-related features.
 
 The target variable is:
 
-```text
+```text id="y2q6jv"
 Loan_Status
 ```
 
-which represents whether the loan application was approved or rejected.
+which represents the loan approval status.
 
 
 ## How to Run
