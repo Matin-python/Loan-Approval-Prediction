@@ -44,6 +44,49 @@ Loan_Status
 which represents the loan approval status.
 
 
+## Data Preprocessing
+
+The following preprocessing steps are performed before training the models.
+
+
+### Removing Loan ID
+
+The `Loan_ID` column is removed because it is only an identifier and is not used for prediction.
+
+```python id="8pl4cw"
+data.drop(["Loan_ID"], axis=1, inplace=True)
+```
+
+
+### Encoding Categorical Features
+
+Categorical features are converted into numerical values using `LabelEncoder`.
+
+```python id="6m2b7v"
+label_encoder = preprocessing.LabelEncoder()
+```
+
+
+### Handling Missing Values
+
+Missing values are replaced with the mean value of their corresponding columns.
+
+```python id="p4q6ds"
+for col in data.columns:
+    data[col] = data[col].fillna(data[col].mean())
+```
+
+
+### Train/Test Split
+
+The dataset is divided into training and testing sets using an 80/20 split.
+
+```text id="7h4v2n"
+80% → Training data
+20% → Testing data
+```
+
+
 ## How to Run
 
 1. Make sure Python is installed.
