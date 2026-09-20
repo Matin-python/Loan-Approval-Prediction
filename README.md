@@ -87,6 +87,47 @@ The dataset is divided into training and testing sets using an 80/20 split.
 ```
 
 
+## Data Visualization
+
+Two visualizations are created to explore the dataset before training the models.
+
+### Gender Distribution
+
+A count plot is used to visualize the number of male and female applicants.
+
+```python id="x9k2lm"
+plt.figure(figsize=(8, 4))
+ax = sns.countplot(x="Gender", data=data)
+
+for container in ax.containers:
+    ax.bar_label(container)
+
+plt.show()
+```
+
+### Gender Distribution Output
+
+<p align="center">
+  <img src="screenshots/gender_distribution.png" width="700">
+</p>
+
+### Correlation Heatmap
+
+A correlation heatmap is created to visualize the relationships between the numerical features in the dataset.
+
+```python id="m7q3va"
+plt.figure(figsize=(11,12))
+sns.heatmap(data.corr(), annot=True)
+plt.show()
+```
+
+### Correlation Heatmap Output
+
+<p align="center">
+  <img src="screenshots/correlation_heatmap.png" width="700">
+</p>
+
+
 ## How to Run
 
 1. Make sure Python is installed.
