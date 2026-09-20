@@ -169,7 +169,6 @@ lc_model = LogisticRegression(max_iter=10000)
 
 The model is trained using the training dataset and then used to make predictions on the test dataset.
 
----
 
 ### 2. K-Nearest Neighbors (KNN)
 
@@ -182,6 +181,28 @@ knn_model = KNeighborsClassifier(n_neighbors=3)
 ```
 
 The prediction is based on the nearest samples in the training dataset.
+
+
+## Model Training
+
+Both models are trained using the same training and testing datasets.
+
+```python id="n2w8pk"
+for clf in (lc_model, knn_model):
+    clf.fit(X_train, Y_train)
+
+    y_pred = clf.predict(X_test)
+
+    print(
+        'Acuuracy score of',
+        clf,
+        '=',
+        metrics.accuracy_score(Y_test, y_pred) * 100,
+        '%'
+    )
+```
+
+This allows the performance of Logistic Regression and KNN to be compared using the same test dataset.
 
 
 ## How to Run
