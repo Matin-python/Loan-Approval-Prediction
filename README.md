@@ -124,8 +124,35 @@ plt.show()
 ### Correlation Heatmap Output
 
 <p align="center">
-  <img src="screenshots/correlation_heatmap.png" width="700">
+  <img src="screenshots/correlation_heatmap.png" width="900">
 </p>
+
+
+## Machine Learning Workflow
+
+The project follows the workflow below:
+
+```text id="r5c8nx"
+Loan Dataset
+      ↓
+Remove Loan_ID
+      ↓
+Data Visualization
+      ↓
+Encode Categorical Features
+      ↓
+Handle Missing Values
+      ↓
+Separate Features and Target
+      ↓
+Train/Test Split
+      ↓
+Train Machine Learning Models
+      ↓
+Make Predictions
+      ↓
+Evaluate Accuracy
+```
 
 
 ## How to Run
