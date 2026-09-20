@@ -155,6 +155,35 @@ Evaluate Accuracy
 ```
 
 
+## Models
+
+Two classification algorithms are used in this project.
+
+### 1. Logistic Regression
+
+Logistic Regression is used to predict the loan approval status.
+
+```python id="v3n6xq"
+lc_model = LogisticRegression(max_iter=10000)
+```
+
+The model is trained using the training dataset and then used to make predictions on the test dataset.
+
+---
+
+### 2. K-Nearest Neighbors (KNN)
+
+K-Nearest Neighbors is used as the second classification model.
+
+The model uses three nearest neighbors:
+
+```python id="c7m1zd"
+knn_model = KNeighborsClassifier(n_neighbors=3)
+```
+
+The prediction is based on the nearest samples in the training dataset.
+
+
 ## How to Run
 
 1. Make sure Python is installed.
