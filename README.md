@@ -243,6 +243,21 @@ Loan-Approval-Prediction/
 ```
 
 
+## Installation
+
+Install the required Python libraries using:
+
+```bash id="h3r7vn"
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+You can also install the dependencies using:
+
+```bash id="m1x9qa"
+pip install -r requirements.txt
+```
+
+
 ## How to Run
 
 1. Make sure Python is installed.
