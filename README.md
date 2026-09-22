@@ -262,14 +262,21 @@ pip install -r requirements.txt
 
 1. Make sure Python is installed.
 2. Place `loan.csv` in the project directory.
-3. Install the required libraries.
-4. Run the Python script:
+3. Create the `screenshots` folder and add the visualization images.
+4. Install the required libraries.
+5. Run the Python script:
 
-```bash
+```bash id="q7t2lx"
 python loan_prediction.py
 ```
 
-The program will display the correlation heatmap and print the accuracy scores of Logistic Regression and KNN.
+The program will display:
+
+* Gender distribution
+* Correlation heatmap
+* Logistic Regression accuracy
+* KNN accuracy
+
 
 ## Requirements
 
