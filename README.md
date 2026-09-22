@@ -15,6 +15,19 @@ Two Machine Learning classification models are trained and evaluated in this pro
 * K-Nearest Neighbors (KNN)
 
 
+## Features
+
+* Loan approval prediction
+* Data preprocessing
+* Categorical feature encoding
+* Missing value handling
+* Gender distribution visualization
+* Correlation heatmap
+* Logistic Regression classification
+* K-Nearest Neighbors classification
+* Accuracy evaluation
+
+
 ## Technologies Used
 
 * Python
@@ -29,7 +42,7 @@ Two Machine Learning classification models are trained and evaluated in this pro
 
 The project uses the following dataset:
 
-```text id="f8e2k1"
+```text 
 loan.csv
 ```
 
@@ -37,7 +50,7 @@ The dataset contains information about loan applicants, including personal, fina
 
 The target variable is:
 
-```text id="y2q6jv"
+```text 
 Loan_Status
 ```
 
@@ -48,40 +61,36 @@ which represents the loan approval status.
 
 The following preprocessing steps are performed before training the models.
 
-
 ### Removing Loan ID
 
 The `Loan_ID` column is removed because it is only an identifier and is not used for prediction.
 
-```python id="8pl4cw"
+```python 
 data.drop(["Loan_ID"], axis=1, inplace=True)
 ```
-
 
 ### Encoding Categorical Features
 
 Categorical features are converted into numerical values using `LabelEncoder`.
 
-```python id="6m2b7v"
+```python 
 label_encoder = preprocessing.LabelEncoder()
 ```
-
 
 ### Handling Missing Values
 
 Missing values are replaced with the mean value of their corresponding columns.
 
-```python id="p4q6ds"
+```python 
 for col in data.columns:
     data[col] = data[col].fillna(data[col].mean())
 ```
-
 
 ### Train/Test Split
 
 The dataset is divided into training and testing sets using an 80/20 split.
 
-```text id="7h4v2n"
+```text 
 80% → Training data
 20% → Testing data
 ```
@@ -95,7 +104,7 @@ Two visualizations are created to explore the dataset before training the models
 
 A count plot is used to visualize the number of male and female applicants.
 
-```python id="x9k2lm"
+```python 
 plt.figure(figsize=(8, 4))
 ax = sns.countplot(x="Gender", data=data)
 
@@ -115,7 +124,7 @@ plt.show()
 
 A correlation heatmap is created to visualize the relationships between the numerical features in the dataset.
 
-```python id="m7q3va"
+```python 
 plt.figure(figsize=(11,12))
 sns.heatmap(data.corr(), annot=True)
 plt.show()
@@ -132,7 +141,7 @@ plt.show()
 
 The project follows the workflow below:
 
-```text id="r5c8nx"
+```text 
 Loan Dataset
       ↓
 Remove Loan_ID
@@ -163,12 +172,11 @@ Two classification algorithms are used in this project.
 
 Logistic Regression is used to predict the loan approval status.
 
-```python id="v3n6xq"
+```python 
 lc_model = LogisticRegression(max_iter=10000)
 ```
 
 The model is trained using the training dataset and then used to make predictions on the test dataset.
-
 
 ### 2. K-Nearest Neighbors (KNN)
 
@@ -176,7 +184,7 @@ K-Nearest Neighbors is used as the second classification model.
 
 The model uses three nearest neighbors:
 
-```python id="c7m1zd"
+```python 
 knn_model = KNeighborsClassifier(n_neighbors=3)
 ```
 
@@ -187,7 +195,7 @@ The prediction is based on the nearest samples in the training dataset.
 
 Both models are trained using the same training and testing datasets.
 
-```python id="n2w8pk"
+```python 
 for clf in (lc_model, knn_model):
     clf.fit(X_train, Y_train)
 
@@ -211,13 +219,13 @@ The models are evaluated using **Accuracy Score**.
 
 Accuracy represents the percentage of test samples that are classified correctly.
 
-```python id="d6r4sy"
+```python 
 metrics.accuracy_score(Y_test, y_pred) * 100
 ```
 
 ### Example Output
 
-```text id="p8z1cw"
+```text
 Acuuracy score of LogisticRegression(...) = XX.XX %
 
 Acuuracy score of KNeighborsClassifier(n_neighbors=3) = XX.XX %
@@ -228,7 +236,7 @@ The exact accuracy values depend on the dataset and the resulting train/test spl
 
 ## Project Structure
 
-```text id="k4m8ps"
+```text 
 Loan-Approval-Prediction/
 │
 ├── screenshots/
@@ -247,13 +255,13 @@ Loan-Approval-Prediction/
 
 Install the required Python libraries using:
 
-```bash id="h3r7vn"
+```bash 
 pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
 You can also install the dependencies using:
 
-```bash id="m1x9qa"
+```bash 
 pip install -r requirements.txt
 ```
 
@@ -266,7 +274,7 @@ pip install -r requirements.txt
 4. Install the required libraries.
 5. Run the Python script:
 
-```bash id="q7t2lx"
+```bash
 python loan_prediction.py
 ```
 
@@ -278,12 +286,11 @@ The program will display:
 * KNN accuracy
 
 
-
 ## Requirements
 
 The main dependencies are:
 
-```text
+```text 
 pandas
 numpy
 matplotlib
@@ -310,9 +317,11 @@ Contributions, suggestions, and bug reports are welcome.
 
 Feel free to fork this repository and submit a pull request.
 
+
 ## License
 
 This project is licensed under the MIT License.
+
 
 ## Author
 
