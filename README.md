@@ -278,6 +278,7 @@ The program will display:
 * KNN accuracy
 
 
+
 ## Requirements
 
 The main dependencies are:
@@ -289,6 +290,19 @@ matplotlib
 seaborn
 scikit-learn
 ```
+
+
+## Future Improvements
+
+* Apply feature scaling before KNN
+* Improve categorical feature encoding
+* Test different values of `k`
+* Add confusion matrices
+* Add precision, recall, and F1-score
+* Compare additional Machine Learning algorithms
+* Improve missing-value handling
+* Add a user interface for predicting new loan applications
+
 
 ## Contributing
 
