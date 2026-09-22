@@ -226,6 +226,22 @@ Acuuracy score of KNeighborsClassifier(n_neighbors=3) = XX.XX %
 The exact accuracy values depend on the dataset and the resulting train/test split.
 
 
+## Project Structure
+
+```text id="k4m8ps"
+Loan-Approval-Prediction/
+│
+├── screenshots/
+│   ├── gender_distribution.png
+│   └── correlation_heatmap.png
+│
+├── loan.csv
+├── loan_prediction.py
+├── requirements.txt
+├── LICENSE
+└── README.md
+```
+
 
 ## How to Run
 
