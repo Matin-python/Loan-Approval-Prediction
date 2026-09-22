@@ -205,6 +205,28 @@ for clf in (lc_model, knn_model):
 This allows the performance of Logistic Regression and KNN to be compared using the same test dataset.
 
 
+## Evaluation
+
+The models are evaluated using **Accuracy Score**.
+
+Accuracy represents the percentage of test samples that are classified correctly.
+
+```python id="d6r4sy"
+metrics.accuracy_score(Y_test, y_pred) * 100
+```
+
+### Example Output
+
+```text id="p8z1cw"
+Acuuracy score of LogisticRegression(...) = XX.XX %
+
+Acuuracy score of KNeighborsClassifier(n_neighbors=3) = XX.XX %
+```
+
+The exact accuracy values depend on the dataset and the resulting train/test split.
+
+
+
 ## How to Run
 
 1. Make sure Python is installed.
