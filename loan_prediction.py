@@ -13,6 +13,11 @@ data = pd.read_csv('loan.csv')
 
 data.drop(["Loan_ID"], axis= 1, inplace= True)
 
+plt.figure(figsize=(8, 4))
+ax = sns.countplot(x="Gender", data=data)
+for container in ax.containers:
+    ax.bar_label(container)
+plt.show()
 
 label_encoder = preprocessing.LabelEncoder()
 obj = (data.dtypes == "str")
